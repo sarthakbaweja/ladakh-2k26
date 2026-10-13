@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ladakh-2k26",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ladakh-2k26",
+      "database_id": "00830eb8-c15f-42c0-aa80-eaf6c861c5aa"
+    }
+  ],
+  "observability": { "enabled": true }
+}

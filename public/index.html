@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ladakh Group Checklist</title>
+<meta name="description" content="Shared checklist for the Ladakh trip, Oct 17–21">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Work+Sans:wght@400;500;600&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;padding:0}
+/* Layout: single column field-notebook list, grouped by phase, progress up top */
+:root{color-scheme:light;--bg:#f3f5f6;--card:#fff;--fg:#1d2a33;--muted:#5d6c76;--line:#d6dde2;--accent:#1f6f8b;--warn:#b5521b;--warnbg:#fbeee5;--done:#8a979f;--ok:#2f8a4f;
+--display:"Fraunces",Georgia,serif;--body:"Work Sans",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a1f;--card:#1a242b;--fg:#e4ebef;--muted:#9aa9b2;--line:#2c3a43;--accent:#5fb3d1;--warn:#f0995e;--warnbg:#3a2418;--done:#6b7a83;--ok:#5fc283;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a1f;--card:#1a242b;--fg:#e4ebef;--muted:#9aa9b2;--line:#2c3a43;--accent:#5fb3d1;--warn:#f0995e;--warnbg:#3a2418;--done:#6b7a83;--ok:#5fc283;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 48px;display:grid;gap:22px}
+h1{font-family:var(--display);font-size:30px;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0}
+.crew{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.crew span{border:1px solid var(--line);border-radius:99px;padding:2px 10px;font-size:13px}
+.bar{height:6px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.prog{font-size:13px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.sync{display:inline-flex;align-items:center;gap:6px}
+.sync::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--muted)}
+.sync[data-s="live"]::before{background:var(--ok)}
+.sync[data-s="off"]::before{background:var(--warn)}
+.alert{background:var(--warnbg);border-radius:10px;padding:14px 16px}
+.alert h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--warn);margin:0 0 6px}
+.alert ul{margin:0;padding-left:18px;display:grid;gap:4px}
+section h2{font-family:var(--display);font-size:20px;margin:0 0 4px}
+section .when{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
+ul.list{list-style:none;margin:8px 0 0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:10px}
+ul.list li{border-top:1px solid var(--line)}
+ul.list li:first-child{border-top:0}
+label{display:flex;gap:12px;padding:11px 14px;cursor:pointer;align-items:flex-start}
+input{margin-top:4px;width:18px;height:18px;accent-color:var(--accent);flex:none}
+.t{min-width:0}
+.who{font-size:12px;color:var(--muted);display:block}
+input:checked+.t{color:var(--done);text-decoration:line-through}
+input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.foot{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Ladakh Group Checklist</h1>
+<p class="sub">Oct 17–21 · Leh → Dha → Kargil → Lamayuru → Leh</p>
+<div class="crew"><span>Rishabh</span><span>Akshit</span><span>Vipul</span><span>Sarthak</span></div>
+</header>
+<div><div class="prog"><span>Progress · <span class="sync" id="sync" data-s="wait">Connecting…</span></span><span id="pc">0 / 0</span></div><div class="bar"><i id="pb"></i></div></div>
+
+<div class="alert"><h2>Fix first</h2><ul>
+<li>Return flight 6E 6822 leaves Leh 13:35, bag drop closes 12:35. Leave Lamayuru by 7:30, not 8:00, and drop Leh Palace.</li>
+<li>Only the Leh → Delhi ticket is in hand. Confirm the Oct 17 Delhi → Leh booking for all four.</li>
+<li>Permit deadline (Oct 10) has passed. Get the Inner Line Permit for all four names today.</li>
+</ul></div>
+
+<section><span class="when">Today–Oct 14</span><h2>Bookings</h2><ul class="list">
+<li><label><input type="checkbox" id="b1"><span class="t">Confirm Delhi → Leh, Oct 17, earliest flight, 4 seats<span class="who">Whoever booked</span></span></label></li>
+<li><label><input type="checkbox" id="b2"><span class="t">Return booked: 6E 6822, Oct 21, PNR SDCYFT<span class="who">Done</span></span></label></li>
+<li><label><input type="checkbox" id="b3"><span class="t">Taxi: one Innova/Xylo for 4 people + 4 bags, Oct 17–21, all-inclusive rate, Hambuting La experience<span class="who">Assign one person</span></span></label></li>
+<li><label><input type="checkbox" id="b4"><span class="t">Inner Line Permit covering Dha-Hanu, Batalik, Garkone/Darchik for all 4<span class="who">Taxi operator or Leh DC portal</span></span></label></li>
+<li><label><input type="checkbox" id="b5"><span class="t">Upper Dah Homestay, Oct 18 (2 rooms)</span></label></li>
+<li><label><input type="checkbox" id="b6"><span class="t">Hotel Grand Moonland, Oct 20, monastery-view rooms</span></label></li>
+<li><label><input type="checkbox" id="b7"><span class="t">Kargil hotel, Oct 19</span></label></li>
+<li><label><input type="checkbox" id="b8"><span class="t">Leh guesthouse on Changspa Road, Oct 17, heated</span></label></li>
+<li><label><input type="checkbox" id="b9"><span class="t">Agree how costs are split and who pays what</span></label></li>
+</ul></section>
+
+<section><span class="when">Oct 13–16</span><h2>Each person</h2><ul class="list">
+<li><label><input type="checkbox" id="p1"><span class="t">Postpaid SIM bought in a store, tested, works in Ladakh<span class="who">All 4 · at least one Airtel, ideally one BSNL</span></span></label></li>
+<li><label><input type="checkbox" id="p2"><span class="t">Doctor visit for altitude medication<span class="who">All 4</span></span></label></li>
+<li><label><input type="checkbox" id="p3"><span class="t">Original photo ID (needed at airport and army posts)<span class="who">All 4</span></span></label></li>
+<li><label><input type="checkbox" id="p4"><span class="t">Bag within 15 kg checked + 7 kg cabin, power bank in cabin<span class="who">All 4</span></span></label></li>
+<li><label><input type="checkbox" id="p5"><span class="t">Down jacket, thermals, fleece, gloves, beanie, wool socks<span class="who">All 4</span></span></label></li>
+<li><label><input type="checkbox" id="p6"><span class="t">SPF 50, lip balm, UV sunglasses, headlamp<span class="who">All 4</span></span></label></li>
+<li><label><input type="checkbox" id="p7"><span class="t">Backup cash from Delhi<span class="who">All 4</span></span></label></li>
+<li><label><input type="checkbox" id="p8"><span class="t">Google Maps offline for Leh–Kargil<span class="who">All 4</span></span></label></li>
+</ul></section>
+
+<section><span class="when">Oct 13–16</span><h2>Shared</h2><ul class="list">
+<li><label><input type="checkbox" id="s1"><span class="t">Group medical kit: ORS, paracetamol, motion-sickness tablets, antacid, loperamide, band-aids, crepe bandage</span></label></li>
+<li><label><input type="checkbox" id="s2"><span class="t">Pulse oximeter (one for the group)</span></label></li>
+<li><label><input type="checkbox" id="s3"><span class="t">Print 5 permit copies and booking confirmations</span></label></li>
+<li><label><input type="checkbox" id="s4"><span class="t">Snacks for the Oct 18–19 drives</span></label></li>
+<li><label><input type="checkbox" id="s5"><span class="t">Check Leh and Kargil forecasts</span></label></li>
+<li><label><input type="checkbox" id="s6"><span class="t">Call all four stays to reconfirm heating and that they're open</span></label></li>
+<li><label><input type="checkbox" id="s7"><span class="t">Web check-in for the return flight</span></label></li>
+</ul></section>
+
+<section><span class="when">On the trip</span><h2>Key moments</h2><ul class="list">
+<li><label><input type="checkbox" id="t1"><span class="t">Oct 17: full rest in Leh, no alcohol</span></label></li>
+<li><label><input type="checkbox" id="t2"><span class="t">Oct 18: withdraw ₹8–10k each at Khaltse; ask driver about Hambuting La</span></label></li>
+<li><label><input type="checkbox" id="t3"><span class="t">Oct 19: IDs and permit handy at Batalik checkpoints</span></label></li>
+<li><label><input type="checkbox" id="t4"><span class="t">Oct 21: leave Lamayuru 7:30, at Leh airport by 11:35</span></label></li>
+</ul></section>
+
+<p class="foot">Ticks are shared: everyone with this link sees the same list, updated every few seconds.</p>
+</div>
+<script>
+const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+const syncEl=document.getElementById('sync');
+const pending=new Map(); // id -> desired value while a save is in flight
+let timer=null;
+
+function setSync(s,text){syncEl.dataset.s=s;syncEl.textContent=text}
+function upd(){const n=boxes.filter(b=>b.checked).length;document.getElementById('pc').textContent=n+' / '+boxes.length;document.getElementById('pb').style.width=(n/boxes.length*100)+'%'}
+
+async function load(){
+  try{
+    const r=await fetch('/api/state',{cache:'no-store'});
+    if(!r.ok)throw new Error(r.status);
+    const {checks}=await r.json();
+    boxes.forEach(b=>{if(!pending.has(b.id))b.checked=!!checks[b.id]});
+    upd();setSync('live','Live');
+  }catch(e){setSync('off','Offline, retrying')}
+}
+
+async function save(id,checked){
+  pending.set(id,checked);
+  try{
+    const r=await fetch('/api/toggle',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id,checked})});
+    if(!r.ok)throw new Error(r.status);
+    setSync('live','Live');
+  }catch(e){
+    setSync('off','Not saved, retrying');
+    setTimeout(()=>{if(pending.get(id)===checked)save(id,checked)},3000);
+    return;
+  }
+  if(pending.get(id)===checked)pending.delete(id);
+}
+
+boxes.forEach(b=>b.addEventListener('change',()=>{upd();save(b.id,b.checked)}));
+
+function startPolling(){clearInterval(timer);timer=setInterval(load,4000)}
+document.addEventListener('visibilitychange',()=>{if(document.hidden){clearInterval(timer)}else{load();startPolling()}});
+window.addEventListener('focus',load);
+
+upd();load();startPolling();
+</script>
+</body>
+</html>
